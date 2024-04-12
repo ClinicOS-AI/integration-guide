@@ -7,7 +7,7 @@ Follow these steps to integrate and set up your form:
    <body>
      <!-- body content -->
    
-     <script src="<script_file_name>" themeColor="<hex_color>"
+     <script src="https://www.clinic-os.com/clinicos-scan-form.js" themeColor="<hex_color>"
        clinicSdkKey="<your_sdk_key>"></script>
    
      <!-- body content -->
