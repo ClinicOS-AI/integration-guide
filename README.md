@@ -1,21 +1,9 @@
-# Project Name
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* Note any prerequisites or dependencies here.
-
 ### Integration Guide
 
-Follow these steps to integrate and set up your app:
+Follow these steps to integrate and set up your form:
 
 1. **Accessing User Uploaded Images:**
-   To receive data from the iframe, add the following code inside the `<body>` tag of your HTML file:
+   To receive data from the iframe, add the following code inside the `<body>` tag of your HTML file.
    ```html
    <script>
      window.addEventListener("message", event => {
@@ -24,13 +12,13 @@ Follow these steps to integrate and set up your app:
    </script>
 
 2. **Adding the Script to Create Modal:**
-   Add the following script inside the `<body>` tag of your HTML file, replacing placeholders with actual values:
+   Add the following script inside the `<body>` tag of your HTML file, replacing placeholders with actual values.
    ```HTML
    <script src="<script_file_name>" themeColor="<hex_color>"
      clinicSdkKey="<your_sdk_key>"></script>
 
 3. **Boilerplate for Creating Buttons to Open Modals (for React App):**
-   Use this boilerplate code in your React component to create buttons that open respective modals:
+   Use this boilerplate code in your React component to create buttons that open respective modals.
    ```JSX
     import React from "react";
     
