@@ -28,7 +28,7 @@ Follow these steps to integrate and set up your form:
      }, []);
 
      return (
-       // Your JSX
+       // Your JSX content
      );
    };
    
