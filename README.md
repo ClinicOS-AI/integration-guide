@@ -4,23 +4,21 @@ Follow these steps to integrate and set up your form:
 1. **Adding the Script to Create Modal:**
    Add the following script inside the `<body>` tag of your HTML file, replacing placeholders with actual values.
    ```HTML
-   <script src="<script_file_name>" themeColor="<hex_color>"
-     clinicSdkKey="<your_sdk_key>"></script>
+   <body>
+     <!-- body content -->
+   
+     <script src="<script_file_name>" themeColor="<hex_color>"
+       clinicSdkKey="<your_sdk_key>"></script>
+   
+     <!-- body content -->
+   </body>
    ```
 2. **Accessing User Uploaded Images:**
-   To receive data from the iframe, add the following code inside the `<body>` tag of your HTML file.
-   ```html
-   <script>
-     window.addEventListener("message", event => {
-       console.log(event.data);
-     })
-   </script>
-   ```
-   Or inside your React App
+   To receive data from the iframe, add the following code inside your React App
    ```JSX
    import React, { useEffect } from "react";
    
-   const App = () => {
+   const YourReactComponent = () => {
    
      useEffect(() => {
        window.addEventListener("message", (ev) => {
@@ -34,7 +32,7 @@ Follow these steps to integrate and set up your form:
      );
    };
    
-   export default App;
+   export default YourReactComponent;
    ```
 
 
@@ -43,7 +41,7 @@ Follow these steps to integrate and set up your form:
    ```JSX
     import React from "react";
     
-    const App = () => {
+    const YourReactComponent = () => {
    
       const handleShowTorsoScan = (e) => {
         e.preventDefault();
@@ -65,4 +63,4 @@ Follow these steps to integrate and set up your form:
       );
     };
     
-    export default App;
+    export default YourReactComponent;
