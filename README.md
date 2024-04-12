@@ -44,6 +44,7 @@ Follow these steps to integrate and set up your form:
     import React from "react";
     
     const App = () => {
+   
       const handleShowTorsoScan = (e) => {
         e.preventDefault();
         const modal = document.getElementById("torso-scan-modal-k28vew83vj");
