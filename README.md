@@ -24,6 +24,7 @@ Follow these steps to integrate and set up your form:
    
      useEffect(() => {
        window.addEventListener("message", (ev) => {
+         // Do something with your image data
          console.log(ev.data);
        });
      }, []);
