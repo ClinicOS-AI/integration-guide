@@ -1,4 +1,4 @@
-### Integration Guide
+### AI Photo Capture: Integration Guide
 
 Follow these steps to integrate and set up your form:
 1. **Adding the Script to Create Modal:**
