@@ -1,8 +1,13 @@
 ### Integration Guide
 
 Follow these steps to integrate and set up your form:
-
-1. **Accessing User Uploaded Images:**
+1. **Adding the Script to Create Modal:**
+   Add the following script inside the `<body>` tag of your HTML file, replacing placeholders with actual values.
+   ```HTML
+   <script src="<script_file_name>" themeColor="<hex_color>"
+     clinicSdkKey="<your_sdk_key>"></script>
+   ```
+2. **Accessing User Uploaded Images:**
    To receive data from the iframe, add the following code inside the `<body>` tag of your HTML file.
    ```html
    <script>
@@ -10,12 +15,27 @@ Follow these steps to integrate and set up your form:
        console.log(event.data);
      })
    </script>
+   ```
+   Or inside your React App
+   ```JSX
+   import React, { useEffect } from "react";
+   
+   const App = () => {
+   
+     useEffect(() => {
+       window.addEventListener("message", (ev) => {
+         console.log(ev.data);
+       });
+     }, []);
 
-2. **Adding the Script to Create Modal:**
-   Add the following script inside the `<body>` tag of your HTML file, replacing placeholders with actual values.
-   ```HTML
-   <script src="<script_file_name>" themeColor="<hex_color>"
-     clinicSdkKey="<your_sdk_key>"></script>
+     return (
+       // Your JSX
+     );
+   };
+   
+   export default App;
+   ```
+
 
 3. **Boilerplate for Creating Buttons to Open Modals (for React App):**
    Use this boilerplate code in your React component to create buttons that open respective modals.
