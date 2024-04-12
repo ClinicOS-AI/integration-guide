@@ -2,7 +2,7 @@
 
 Follow these steps to integrate and set up your form:
 1. **Adding the Script to Create Modal:**
-   Add the following script inside the `<body>` tag of your HTML file, replacing placeholders with actual values.
+   Add the following script inside the `<body>` tag of your HTML file, replacing placeholders with actual values:
    ```HTML
    <body>
      <!-- body content -->
@@ -14,7 +14,7 @@ Follow these steps to integrate and set up your form:
    </body>
    ```
 2. **Accessing User Uploaded Images:**
-   To receive data from the iframe, add the following code inside your React App
+   To receive data from the iframe, add the following code inside your React App:
    ```JSX
    import React, { useEffect } from "react";
    
@@ -37,7 +37,7 @@ Follow these steps to integrate and set up your form:
 
 
 3. **Boilerplate for Creating Buttons to Open Modals (for React App):**
-   Use this boilerplate code in your React component to create buttons that open respective modals.
+   Use this boilerplate code in your React component to create buttons that open respective modals:
    ```JSX
     import React from "react";
     
