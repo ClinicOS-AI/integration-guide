@@ -64,3 +64,67 @@ Follow these steps to integrate and set up your form:
     };
     
     export default YourReactComponent;
+
+## Handling Captured Photo Data
+After the user submits images using the form, the images are returned in the console.
+
+### Data Structure
+After users submit images, the data is structured as follows:
+- Each object in the array represents one image, containing:
+  - `presigned_url`: A URL for directly accessing the uploaded image. Valid for 30 minutes.
+  - `image`: A Blob object containing the image data.
+  - `viewType`: Describes the perspective of the image (e.g., "BODY_FRONT", "BODY_SIDE", etc.).
+
+```javascript
+[
+  {
+    presigned_url: "https://production-us-east...",
+    image: Blob,
+    viewType: "BODY_FRONT"
+  },
+  {
+    presigned_url: "https://production-us-east...",
+    image: Blob,
+    viewType: "BODY_LEFT"
+  },
+  {
+    presigned_url: "https://production-us-east...",
+    image: Blob,
+    viewType: "BODY_RIGHT"
+  },
+  {
+    presigned_url: "https://production-us-east...",
+    image: Blob,
+    viewType: "BODY_BACK"
+  }
+]
+```
+
+### Recommended Usage
+- **Uploading Images**:
+  - **Method 1**: Directly upload the Blob to your server for processing or storage.
+  - **Method 2**: Use the presigned URL to access or download the image server-side.
+
+### Example: Uploading a Blob to Your Server
+Here's how you might upload an image Blob to your server using JavaScript:
+
+```javascript
+async function uploadImage(blob) {
+  const formData = new FormData();
+  formData.append("file", blob);
+
+  try {
+    const response = await fetch('YOUR_SERVER_ENDPOINT', {
+      method: 'POST',
+      body: formData,
+    });
+    if (response.ok) {
+      console.log("Image uploaded successfully");
+    } else {
+      console.error("Upload failed");
+    }
+  } catch (error) {
+    console.error("Error during the upload:", error);
+  }
+}
+```
