@@ -109,14 +109,11 @@ After users submit images, the data is structured as follows:
 Here's how you might upload an image Blob to your server using JavaScript:
 
 ```javascript
-async function uploadImage(blob) {
-  const formData = new FormData();
-  formData.append("file", blob);
-
+async function uploadImage(data) {
   try {
     const response = await fetch('YOUR_SERVER_ENDPOINT', {
       method: 'POST',
-      body: formData,
+      body: data,
     });
     if (response.ok) {
       console.log("Image uploaded successfully");
