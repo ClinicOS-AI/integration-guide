@@ -7,8 +7,8 @@ This guide walks through the integration steps for the embedding the Onboarding 
 - (Optional) Hex color for the theme
 - (Optional) position
 - (Optional) isCtaOpenByDefault
-- (Optional) towardCenterBottom
-- (Optional) towardCenterTop
+- (Optional) horizontalOffset
+- (Optional) verticalOffset
 
 ### Embed the ClinicOS Form script
 Embed the following script in the html body of the site, replacing placeholders with actual values:
@@ -21,8 +21,8 @@ Embed the following script in the html body of the site, replacing placeholders 
     themeColor="<hex_color>"
     isCtaOpenByDefault="<true/false>"
     position="<left/right>"
-    towardCenterBottom="<pixels>"
-    towardCenterTop="<pixels>"
+    horizontalOffset="<pixels>"
+    verticalOffset="<pixels>"
     ></script>
  ```
 
@@ -36,9 +36,9 @@ Sample isCtaOpenByDefault: `true` or `false`
 
 Sample position: `left` or `right`
 
-Sample towardCenterTop: `10px`
+Sample verticalOffset: `10px`
 
-Sample towardCenterBottom: `10px`
+Sample horizontalOffset: `10px`
 
 ```HTML
 <script src="https://www.clinic-os.com/clinicos-full-form-prod-v2.js"
@@ -47,8 +47,8 @@ Sample towardCenterBottom: `10px`
     themeColor="#FF5733"
     isCtaOpenByDefault="true"
     position="right"
-    towardCenterBottom="20px"
-    towardCenterTop="20px"
+    horizontalOffset="20px"
+    verticalOffset="20px"
     ></script>
  ```
 
