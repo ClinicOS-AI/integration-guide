@@ -51,3 +51,26 @@ Sample towardCenterBottom: `10px`
     towardCenterTop="20px"
     ></script>
  ```
+
+### Embed the ClinicOS Form to a Button on Your Website
+1. **Boilerplate for Creating Buttons to Open Modals (for React App):**
+   Use this boilerplate code in your React component to create buttons that open respective modals:
+   ```JSX
+    import React from "react";
+    
+    const YourReactComponent = () => {
+   
+      const handleShowClinicosForm = (e) => {
+        e.preventDefault();
+        const modal = document.getElementById("visualize-the-new-you-k28vew83vj");
+        modal.style.display = "block";
+      };
+    
+      return (
+        <div>
+          <button onClick={(e) => handleShowClinicosForm(e)}>Show body scan</button>
+        </div>
+      );
+    };
+    
+    export default YourReactComponent;
