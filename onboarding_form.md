@@ -1,5 +1,5 @@
 ## Onboarding Form: Integration Guide
-This guide walks through the integration steps for the embedding the Onboarding Form experience into a clinic website.
+This guide walks through the integration steps for the embedding the Onboarding Form experience on a clinic website. 
 
 ### Prerequisites
 - ClinicOS SDK Key
