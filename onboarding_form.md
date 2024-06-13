@@ -42,7 +42,7 @@ Sample horizontalOffset: `10px`
 
 ```HTML
 <script src="https://www.clinic-os.com/clinicos-full-form-prod-v2.js"
-    clinicSdkKey="768a5798-d8e1-432b-a5fe-c647ea7fc729"
+    clinicSdkKey="<your_sdk_key>"
     formName="onboarding-tier1"
     themeColor="#FF5733"
     isCtaOpenByDefault="true"
