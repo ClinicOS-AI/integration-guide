@@ -119,7 +119,7 @@ After the user submits images using the form, the images are returned in the con
 After users submit images, the data is structured as follows:
 - Each object in the array represents one image, containing:
   - `image`: A Blob object containing the image data.
-  - `viewType`: Describes the perspective of the image (e.g., "BODY_FRONT", "BODY_SIDE", etc.).
+  - `viewType`: Describes the perspective of the image (e.g., "BODY_FRONT", "BODY_LEFT", etc.).
 
 ```javascript
 {
