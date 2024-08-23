@@ -65,6 +65,53 @@ Follow these steps to integrate and set up your form:
     
     export default YourReactComponent;
 
+3. **List of Available Procedures: The procedure parameters must be one of the following values:**
+   ```JSX
+   const availableProcedures = [
+     "BBL",
+     "TUMMY_TUCK",
+     "BREAST_LIFT",
+     "BREAST_REDUCTION",
+     "BREAST_AUGMENTATION",
+     "BREAST_LIFT_AND_AUGMENTATION",
+     "BURN_REPAIR",
+     "SCAR_REVISION",
+     "HAND_SURGERY",
+     "RECONSTRUCTIVE_SURGERY",
+     "HAIR_TRANSPLANTATION",
+     "BOTOX_INJECTIONS",
+     "DERMAL_FILLERS",
+     "LASER_TREATMENTS",
+     "CHEMICAL_PEEL",
+     "MICRODERMABRASION",
+     "LASER_HAIR_REMOVAL",
+     "THIGH_LIFT",
+     "ARM_LIFT",
+     "BUTTOCK_AUGMENTATION",
+     "BODY_LIFT",
+     "LIPOSUCTION",
+     "CHEEK_AUGMENTATION",
+     "CHIN_SURGERY",
+     "FOREHEAD_LIFT",
+     "OTOPLASTY",
+     "RHYTIDECTOMY",
+     "BLEPHAROPLASTY",
+     "RHINOPLASTY",
+     "RENUVION",
+     "ABDOMINAL_ETCHING",
+     "THIGH_LIPOSUCTION",
+     "ARMS_LIPOSUCTION",
+     "CHIN_LIPOSUCTION",
+     "LABIAPLASTY",
+     "VAGINAL_TIGHTENING",
+     "VAGINAL_PRP",
+     "HAIR_TRANSPLANT",
+     "BIOCHETOMY",
+     "FACE_LIFT",
+     "CHIN_IMPLANT",
+   ];
+
+
 ## Handling Captured Photo Data
 After the user submits images using the form, the images are returned in the console.
 
