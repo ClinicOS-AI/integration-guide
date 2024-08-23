@@ -57,7 +57,7 @@ Follow these steps to integrate and set up your form:
       return (
         <div>
           <button onClick={(e) => handleShowClinicosForm(e, "BREAST_AUGMENTATION")}>
-            {procedure}
+            Open Scan Breast Augmnentation Form
           </button>
         </div>
       );
