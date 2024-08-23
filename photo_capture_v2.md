@@ -124,22 +124,18 @@ After users submit images, the data is structured as follows:
 ```javascript
 {
   {
-    presignedUrl: "https://production-us-east...",
     image: Blob,
     viewType: "BODY_FRONT"
   },
   {
-    presignedUrl: "https://production-us-east...",
     image: Blob,
     viewType: "BODY_LEFT"
   },
   {
-    presignedUrl: "https://production-us-east...",
     image: Blob,
     viewType: "BODY_RIGHT"
   },
   {
-    presignedUrl: "https://production-us-east...",
     image: Blob,
     viewType: "BODY_BACK"
   }
