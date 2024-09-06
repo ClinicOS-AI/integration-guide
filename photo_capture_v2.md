@@ -44,10 +44,10 @@ Follow these steps to integrate and set up your form:
     
     const YourReactComponent = () => {
       
-      const handleShowClinicosForm = (e, procedure) => {
+      const handleShowClinicosForm = (e, procedure, fullName, email, phone) => {
        e.preventDefault();
        const procedureEvent = new CustomEvent("procedure-update", {
-         detail: { procedure },
+         detail: { procedure, fullName, email, phone },
        });
        window.dispatchEvent(procedureEvent);
        const modal = document.getElementById("scan-modal-k28vew83vj");
@@ -56,7 +56,17 @@ Follow these steps to integrate and set up your form:
        
       return (
         <div>
-          <button onClick={(e) => handleShowClinicosForm(e, "BREAST_AUGMENTATION")}>
+         <button
+            onClick={(e) =>
+              handleShowClinicosForm(
+                e,
+                procedure,
+                "full name",
+                "example@exmaple.com",
+                "17075552222",
+              )
+            }
+          >
             Open Scan Breast Augmnentation Form
           </button>
         </div>
