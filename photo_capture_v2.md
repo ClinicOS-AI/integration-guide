@@ -44,10 +44,10 @@ Follow these steps to integrate and set up your form:
     
     const YourReactComponent = () => {
       
-      const handleShowClinicosForm = (e, procedure, fullName, email, phone) => {
+      const handleShowClinicosForm = (e, procedure, name, email, phone) => {
        e.preventDefault();
        const procedureEvent = new CustomEvent("procedure-update", {
-         detail: { procedure, fullName, email, phone },
+         detail: { procedure, name, email, phone },
        });
        window.dispatchEvent(procedureEvent);
        const modal = document.getElementById("scan-modal-k28vew83vj");
