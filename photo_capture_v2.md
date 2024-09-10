@@ -132,24 +132,28 @@ After users submit images, the data is structured as follows:
   - `viewType`: Describes the perspective of the image (e.g., "BODY_FRONT", "BODY_LEFT", etc.).
 
 ```javascript
-{
+[
   {
-    image: Blob,
+    beforeImage: Blob,
+    afterImage: Blob,
     viewType: "BODY_FRONT"
   },
   {
-    image: Blob,
+    beforeImage: Blob,
+    afterImage: Blob,
     viewType: "BODY_LEFT"
   },
   {
-    image: Blob,
+    beforeImage: Blob,
+    afterImage: Blob,
     viewType: "BODY_RIGHT"
   },
   {
-    image: Blob,
+    beforeImage: Blob,
+    afterImage: Blob,
     viewType: "BODY_BACK"
   }
-}
+]
 ```
 
 ### Recommended Usage
